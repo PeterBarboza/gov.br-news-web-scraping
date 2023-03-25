@@ -76,6 +76,10 @@ export async function processAsyncData(getData) {
 }
 
 createServer(async (req, res) => {
+  if(req.method !== 'GET' || req.url !== '/') {
+    return res.end('Route not found')
+  }
+  
   const result = await processAsyncData(getData)
 
   res.writeHead(200, {
