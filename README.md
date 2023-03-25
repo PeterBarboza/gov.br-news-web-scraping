@@ -30,7 +30,7 @@ Inicie o projeto
 $ npm run start
 ```
 
-Depois que o servidor iniciar a rota `/` estará disponível e você poderá receber as notícias através da url `http://localhost:3000/`
+Depois que o servidor iniciar a rota, `/` estará disponível e você poderá receber as notícias através da url `http://localhost:3000/`
 
 A resposta virá como um array de objeto em JSON no seguinte formato:
 
